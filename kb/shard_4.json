@@ -21,18 +21,7 @@
   },
   "tests": {
     "conftest_registry": [],
-    "test_registry": [
-      {
-        "module": "test_settings_personalization",
-        "test_methods": [],
-        "fixtures_used": []
-      },
-      {
-        "module": "test_settings_system_display",
-        "test_methods": [],
-        "fixtures_used": []
-      }
-    ]
+    "test_registry": []
   },
   "locators": {
     "locator_registry": {},
