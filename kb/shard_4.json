@@ -1,0 +1,16 @@
+{
+  "resources": {
+    "method_registry": [],
+    "test_registry": [],
+    "conftest_registry": []
+  },
+  "tests": {
+    "conftest_registry": [],
+    "test_registry": []
+  },
+  "locators": {
+    "locator_registry": {},
+    "method_locator_map": {}
+  },
+  "module_mapping": {}
+}
