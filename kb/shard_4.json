@@ -3,12 +3,101 @@
     "method_registry": []
   },
   "tests": {
-    "conftest_registry": [],
-    "test_registry": []
+    "conftest_registry": [
+      {
+        "method_name": "logger",
+        "method_type": "action",
+        "keywords": [
+          "logger"
+        ],
+        "source": "tests/conftest.py"
+      },
+      {
+        "method_name": "driver",
+        "method_type": "action",
+        "keywords": [
+          "driver"
+        ],
+        "source": "tests/conftest.py"
+      },
+      {
+        "method_name": "settings_page",
+        "method_type": "action",
+        "keywords": [
+          "settings",
+          "page"
+        ],
+        "source": "tests/conftest.py"
+      }
+    ],
+    "test_registry": [
+      {
+        "module": "test_settings_personalization",
+        "test_methods": [
+          "test_navigate_to_personalization_home",
+          "test_background_preview_visible",
+          "test_background_type_dropdown_present",
+          "test_themes_page_active_theme_label",
+          "test_switch_to_dark_mode",
+          "test_switch_to_light_mode",
+          "test_accent_color_picker_visible",
+          "test_lock_screen_background_combo_present",
+          "test_start_recent_apps_toggle",
+          "test_taskbar_auto_hide_toggle"
+        ],
+        "fixtures_used": [
+          "logger",
+          "settings_page"
+        ],
+        "source": "tests/modules/settings/test_settings_personalization.py"
+      },
+      {
+        "module": "test_settings_system_display",
+        "test_methods": [
+          "test_settings_app_launches",
+          "test_navigate_to_system_display_page",
+          "test_brightness_slider_visible",
+          "test_night_light_toggle_available",
+          "test_open_advanced_display_page",
+          "test_scale_dropdown_present",
+          "test_resolution_dropdown_present",
+          "test_toggle_night_light_on_off",
+          "test_change_brightness_interaction",
+          "test_display_page_persists_after_navigation"
+        ],
+        "fixtures_used": [
+          "logger",
+          "settings_page"
+        ],
+        "source": "tests/modules/settings/test_settings_system_display.py"
+      },
+      {
+        "module": "test_settings_time_language",
+        "test_methods": [
+          "test_navigate_to_time_language_home",
+          "test_open_date_time_page",
+          "test_toggle_set_time_automatically",
+          "test_toggle_set_timezone_automatically",
+          "test_time_zone_dropdown_present",
+          "test_sync_now_button_present",
+          "test_open_language_region_page",
+          "test_preferred_languages_list_visible",
+          "test_open_typing_page",
+          "test_toggle_typing_suggestions_and_autocorrect"
+        ],
+        "fixtures_used": [
+          "logger",
+          "settings_page"
+        ],
+        "source": "tests/modules/settings/test_settings_time_language.py"
+      }
+    ]
   },
   "locators": {
     "locator_registry": {},
     "method_locator_map": {}
   },
-  "module_mapping": {}
+  "module_mapping": {
+    "__init__": "tests/modules/settings/__init__.py"
+  }
 }
