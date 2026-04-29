@@ -1,6 +1,366 @@
 {
   "resources": {
-    "method_registry": []
+    "method_registry": [
+      {
+        "method_name": "get_driver",
+        "module": "windows_driver",
+        "method_type": "action",
+        "method_action": "get",
+        "keywords": [
+          "get",
+          "driver"
+        ],
+        "source": "libs/drivers/windows_driver.py"
+      },
+      {
+        "method_name": "quit_driver",
+        "module": "windows_driver",
+        "method_type": "teardown",
+        "method_action": "quit",
+        "keywords": [
+          "quit",
+          "driver"
+        ],
+        "source": "libs/drivers/windows_driver.py"
+      },
+      {
+        "method_name": "is_loaded",
+        "module": "settings_page",
+        "method_type": "action",
+        "method_action": "is",
+        "keywords": [
+          "is",
+          "loaded"
+        ],
+        "source": "libs/flows/windows/settings_page.py"
+      },
+      {
+        "method_name": "go_to_system_display",
+        "module": "settings_page",
+        "method_type": "action",
+        "method_action": "go",
+        "keywords": [
+          "go",
+          "to",
+          "system",
+          "display"
+        ],
+        "source": "libs/flows/windows/settings_page.py"
+      },
+      {
+        "method_name": "go_to_time_language_home",
+        "module": "settings_page",
+        "method_type": "action",
+        "method_action": "go",
+        "keywords": [
+          "go",
+          "to",
+          "time",
+          "language",
+          "home"
+        ],
+        "source": "libs/flows/windows/settings_page.py"
+      },
+      {
+        "method_name": "go_to_date_time",
+        "module": "settings_page",
+        "method_type": "action",
+        "method_action": "go",
+        "keywords": [
+          "go",
+          "to",
+          "date",
+          "time"
+        ],
+        "source": "libs/flows/windows/settings_page.py"
+      },
+      {
+        "method_name": "go_to_language_region",
+        "module": "settings_page",
+        "method_type": "action",
+        "method_action": "go",
+        "keywords": [
+          "go",
+          "to",
+          "language",
+          "region"
+        ],
+        "source": "libs/flows/windows/settings_page.py"
+      },
+      {
+        "method_name": "go_to_typing",
+        "module": "settings_page",
+        "method_type": "action",
+        "method_action": "go",
+        "keywords": [
+          "go",
+          "to",
+          "typing"
+        ],
+        "source": "libs/flows/windows/settings_page.py"
+      },
+      {
+        "method_name": "go_to_personalization_home",
+        "module": "settings_page",
+        "method_type": "action",
+        "method_action": "go",
+        "keywords": [
+          "go",
+          "to",
+          "personalization",
+          "home"
+        ],
+        "source": "libs/flows/windows/settings_page.py"
+      },
+      {
+        "method_name": "go_to_personalization_background",
+        "module": "settings_page",
+        "method_type": "action",
+        "method_action": "go",
+        "keywords": [
+          "go",
+          "to",
+          "personalization",
+          "background"
+        ],
+        "source": "libs/flows/windows/settings_page.py"
+      },
+      {
+        "method_name": "go_to_personalization_themes",
+        "module": "settings_page",
+        "method_type": "action",
+        "method_action": "go",
+        "keywords": [
+          "go",
+          "to",
+          "personalization",
+          "themes"
+        ],
+        "source": "libs/flows/windows/settings_page.py"
+      },
+      {
+        "method_name": "go_to_personalization_colors",
+        "module": "settings_page",
+        "method_type": "action",
+        "method_action": "go",
+        "keywords": [
+          "go",
+          "to",
+          "personalization",
+          "colors"
+        ],
+        "source": "libs/flows/windows/settings_page.py"
+      },
+      {
+        "method_name": "go_to_personalization_lock_screen",
+        "module": "settings_page",
+        "method_type": "action",
+        "method_action": "go",
+        "keywords": [
+          "go",
+          "to",
+          "personalization",
+          "lock",
+          "screen"
+        ],
+        "source": "libs/flows/windows/settings_page.py"
+      },
+      {
+        "method_name": "go_to_personalization_start",
+        "module": "settings_page",
+        "method_type": "setup",
+        "method_action": "go",
+        "keywords": [
+          "go",
+          "to",
+          "personalization",
+          "start"
+        ],
+        "source": "libs/flows/windows/settings_page.py"
+      },
+      {
+        "method_name": "go_to_personalization_taskbar",
+        "module": "settings_page",
+        "method_type": "action",
+        "method_action": "go",
+        "keywords": [
+          "go",
+          "to",
+          "personalization",
+          "taskbar"
+        ],
+        "source": "libs/flows/windows/settings_page.py"
+      },
+      {
+        "method_name": "is_brightness_slider_visible",
+        "module": "settings_page",
+        "method_type": "action",
+        "method_action": "is",
+        "keywords": [
+          "is",
+          "brightness",
+          "slider",
+          "visible"
+        ],
+        "source": "libs/flows/windows/settings_page.py"
+      },
+      {
+        "method_name": "toggle_night_light",
+        "module": "settings_page",
+        "method_type": "action",
+        "method_action": "toggle",
+        "keywords": [
+          "toggle",
+          "night",
+          "light"
+        ],
+        "source": "libs/flows/windows/settings_page.py"
+      },
+      {
+        "method_name": "toggle_set_time_automatically",
+        "module": "settings_page",
+        "method_type": "action",
+        "method_action": "toggle",
+        "keywords": [
+          "toggle",
+          "set",
+          "time",
+          "automatically"
+        ],
+        "source": "libs/flows/windows/settings_page.py"
+      },
+      {
+        "method_name": "toggle_set_timezone_automatically",
+        "module": "settings_page",
+        "method_type": "action",
+        "method_action": "toggle",
+        "keywords": [
+          "toggle",
+          "set",
+          "timezone",
+          "automatically"
+        ],
+        "source": "libs/flows/windows/settings_page.py"
+      },
+      {
+        "method_name": "click_sync_now",
+        "module": "settings_page",
+        "method_type": "action",
+        "method_action": "click",
+        "keywords": [
+          "click",
+          "sync",
+          "now"
+        ],
+        "source": "libs/flows/windows/settings_page.py"
+      },
+      {
+        "method_name": "toggle_typing_suggestions",
+        "module": "settings_page",
+        "method_type": "action",
+        "method_action": "toggle",
+        "keywords": [
+          "toggle",
+          "typing",
+          "suggestions"
+        ],
+        "source": "libs/flows/windows/settings_page.py"
+      },
+      {
+        "method_name": "toggle_autocorrect",
+        "module": "settings_page",
+        "method_type": "action",
+        "method_action": "toggle",
+        "keywords": [
+          "toggle",
+          "autocorrect"
+        ],
+        "source": "libs/flows/windows/settings_page.py"
+      },
+      {
+        "method_name": "toggle_dark_mode",
+        "module": "settings_page",
+        "method_type": "action",
+        "method_action": "toggle",
+        "keywords": [
+          "toggle",
+          "dark",
+          "mode"
+        ],
+        "source": "libs/flows/windows/settings_page.py"
+      },
+      {
+        "method_name": "toggle_light_mode",
+        "module": "settings_page",
+        "method_type": "action",
+        "method_action": "toggle",
+        "keywords": [
+          "toggle",
+          "light",
+          "mode"
+        ],
+        "source": "libs/flows/windows/settings_page.py"
+      },
+      {
+        "method_name": "toggle_start_recent_apps",
+        "module": "settings_page",
+        "method_type": "setup",
+        "method_action": "toggle",
+        "keywords": [
+          "toggle",
+          "start",
+          "recent",
+          "apps"
+        ],
+        "source": "libs/flows/windows/settings_page.py"
+      },
+      {
+        "method_name": "toggle_taskbar_auto_hide",
+        "module": "settings_page",
+        "method_type": "action",
+        "method_action": "toggle",
+        "keywords": [
+          "toggle",
+          "taskbar",
+          "auto",
+          "hide"
+        ],
+        "source": "libs/flows/windows/settings_page.py"
+      },
+      {
+        "method_name": "assert_equal",
+        "module": "assertions",
+        "method_type": "validation",
+        "method_action": "assert",
+        "keywords": [
+          "assert",
+          "equal"
+        ],
+        "source": "libs/utils/assertions.py"
+      },
+      {
+        "method_name": "assert_true",
+        "module": "assertions",
+        "method_type": "validation",
+        "method_action": "assert",
+        "keywords": [
+          "assert",
+          "true"
+        ],
+        "source": "libs/utils/assertions.py"
+      },
+      {
+        "method_name": "assert_false",
+        "module": "assertions",
+        "method_type": "validation",
+        "method_action": "assert",
+        "keywords": [
+          "assert",
+          "false"
+        ],
+        "source": "libs/utils/assertions.py"
+      }
+    ]
   },
   "tests": {
     "conftest_registry": [],
@@ -10,5 +370,10 @@
     "locator_registry": {},
     "method_locator_map": {}
   },
-  "module_mapping": {}
+  "module_mapping": {
+    "windows_driver": "libs/drivers/windows_driver.py",
+    "__init__": "libs/flows/windows/__init__.py",
+    "settings_page": "libs/flows/windows/settings_page.py",
+    "assertions": "libs/utils/assertions.py"
+  }
 }
