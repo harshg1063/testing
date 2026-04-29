@@ -1,6 +1,27 @@
 {
   "resources": {
-    "method_registry": []
+    "method_registry": [
+      {
+        "method_name": "start",
+        "module": "app_session",
+        "method_type": "setup",
+        "method_action": "start",
+        "keywords": [
+          "start"
+        ],
+        "source": "libs/drivers/app_session.py"
+      },
+      {
+        "method_name": "stop",
+        "module": "app_session",
+        "method_type": "teardown",
+        "method_action": "stop",
+        "keywords": [
+          "stop"
+        ],
+        "source": "libs/drivers/app_session.py"
+      }
+    ]
   },
   "tests": {
     "conftest_registry": [],
@@ -10,5 +31,8 @@
     "locator_registry": {},
     "method_locator_map": {}
   },
-  "module_mapping": {}
+  "module_mapping": {
+    "__init__": "libs/drivers/__init__.py",
+    "app_session": "libs/drivers/app_session.py"
+  }
 }
