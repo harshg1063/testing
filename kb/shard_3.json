@@ -1,6 +1,86 @@
 {
   "resources": {
-    "method_registry": []
+    "method_registry": [
+      {
+        "method_name": "find",
+        "module": "base_page",
+        "method_type": "action",
+        "method_action": "find",
+        "keywords": [
+          "find"
+        ],
+        "source": "libs/utils/base_page.py"
+      },
+      {
+        "method_name": "click",
+        "module": "base_page",
+        "method_type": "action",
+        "method_action": "click",
+        "keywords": [
+          "click"
+        ],
+        "source": "libs/utils/base_page.py"
+      },
+      {
+        "method_name": "get_text",
+        "module": "base_page",
+        "method_type": "action",
+        "method_action": "get",
+        "keywords": [
+          "get",
+          "text"
+        ],
+        "source": "libs/utils/base_page.py"
+      },
+      {
+        "method_name": "get_logger",
+        "module": "logger",
+        "method_type": "action",
+        "method_action": "get",
+        "keywords": [
+          "get",
+          "logger"
+        ],
+        "source": "libs/utils/logger.py"
+      },
+      {
+        "method_name": "wait_for",
+        "module": "waits",
+        "method_type": "action",
+        "method_action": "wait",
+        "keywords": [
+          "wait",
+          "for"
+        ],
+        "source": "libs/utils/waits.py"
+      },
+      {
+        "method_name": "wait_for_element_present",
+        "module": "waits",
+        "method_type": "action",
+        "method_action": "wait",
+        "keywords": [
+          "wait",
+          "for",
+          "element",
+          "present"
+        ],
+        "source": "libs/utils/waits.py"
+      },
+      {
+        "method_name": "wait_for_element_visible",
+        "module": "waits",
+        "method_type": "action",
+        "method_action": "wait",
+        "keywords": [
+          "wait",
+          "for",
+          "element",
+          "visible"
+        ],
+        "source": "libs/utils/waits.py"
+      }
+    ]
   },
   "tests": {
     "conftest_registry": [],
@@ -10,5 +90,10 @@
     "locator_registry": {},
     "method_locator_map": {}
   },
-  "module_mapping": {}
+  "module_mapping": {
+    "base_page": "libs/utils/base_page.py",
+    "logger": "libs/utils/logger.py",
+    "waits": "libs/utils/waits.py",
+    "__init__": "tests/__init__.py"
+  }
 }
