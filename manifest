@@ -1,0 +1,87 @@
+{
+  "status": "success",
+  "read_repository": {
+    "owner": "harshg1063",
+    "repo": "testing01",
+    "branch": "main"
+  },
+  "write_repository": {
+    "owner": "harshg1063",
+    "repo": "testing",
+    "branch": "main",
+    "manifest_output_path": "manifest"
+  },
+  "run_id": "harshg1063-testing01-main-manifest-v1",
+  "limits": {
+    "max_files_per_shard": 6,
+    "max_total_size_kb_per_shard": 400
+  },
+  "filters": {
+    "include_extensions": [],
+    "exclude_extensions": []
+  },
+  "summary": {
+    "total_files_considered": 24,
+    "total_shards": 4,
+    "oversized_shards": 0
+  },
+  "shards": [
+    {
+      "shard_id": "shard_1",
+      "files": [
+        "PROJECT_OVERVIEW.txt",
+        "README.md",
+        "config/config.yaml",
+        "libs/__init__.py",
+        "libs/drivers/__init__.py",
+        "libs/drivers/app_session.py"
+      ],
+      "file_count": 6,
+      "total_size_kb": 14.13,
+      "status": "pending"
+    },
+    {
+      "shard_id": "shard_2",
+      "files": [
+        "libs/drivers/windows_driver.py",
+        "libs/flows/__init__.py",
+        "libs/flows/windows/__init__.py",
+        "libs/flows/windows/settings_page.py",
+        "libs/utils/__init__.py",
+        "libs/utils/assertions.py"
+      ],
+      "file_count": 6,
+      "total_size_kb": 8.86,
+      "status": "pending"
+    },
+    {
+      "shard_id": "shard_3",
+      "files": [
+        "libs/utils/base_page.py",
+        "libs/utils/logger.py",
+        "libs/utils/waits.py",
+        "requirements.txt",
+        "resource/ui_map/windows/settings.json",
+        "tests/__init__.py"
+      ],
+      "file_count": 6,
+      "total_size_kb": 8.51,
+      "status": "pending"
+    },
+    {
+      "shard_id": "shard_4",
+      "files": [
+        "tests/conftest.py",
+        "tests/modules/__init__.py",
+        "tests/modules/settings/__init__.py",
+        "tests/modules/settings/test_settings_personalization.py",
+        "tests/modules/settings/test_settings_system_display.py",
+        "tests/modules/settings/test_settings_time_language.py"
+      ],
+      "file_count": 6,
+      "total_size_kb": 17.54,
+      "status": "pending"
+    }
+  ],
+  "warnings": []
+}
